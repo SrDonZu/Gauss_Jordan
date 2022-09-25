@@ -15,6 +15,24 @@
 		"cSpell.language": "es",
 		"cSpell.ignorePaths": [
 			"GaussJordan.code-workspace"
+		],
+		"cSpell.words": [
+			"ecuacion",
+			"incognita",
+			"incognitas",
+			"Jordan",
+			"pivot"
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Algoritmo eliminacion Gauss-Jordan",
+				"type": "python",
+				"request": "launch",
+				"program": "${workspaceFolder}/src/main.py"
+			}
 		]
 	}
 }
