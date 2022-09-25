@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.analysis.autoImportCompletions": false,
+		"python.analysis.completeFunctionParens": true,
+		"python.analysis.inlayHints.functionReturnTypes": true,
+		"python.analysis.inlayHints.variableTypes": true,
+		"window.zoomLevel": 0.5,
+		"terminal.integrated.fontSize": 18,
+		"cSpell.caseSensitive": false,
+		"cSpell.language": "es",
+		"cSpell.ignorePaths": [
+			"GaussJordan.code-workspace"
+		]
+	}
+}
