@@ -1,7 +1,7 @@
 import uso_matrices as matrices
 from uso_matrices import Matriz_Gauss_Jordan
 
-num_incognitas = 3
+num_incognitas = 3 #int(input("# de incognitas: "))
 sistema_ecuaciones = []
 
 for i in range(num_incognitas):
@@ -28,13 +28,18 @@ try:
                 
 except ZeroDivisionError:
     es_infinito = False
-    filas_revisadas = 0
-    while (not es_infinito) and (filas_revisadas < matriz.filas):
-        for j in range(matriz.columnas):
-            es_infinito = matriz.get(filas_revisadas, j) == 0
-            
-        filas_revisadas += 1
-
+    for fila in matriz.matriz_extendida:
+        fila_en_ceros = True
+        for elemento in fila:
+            if elemento != 0:
+                fila_en_ceros = False
+        
+        es_infinito = fila_en_ceros
+        if es_infinito:
+            break
+    
+    
+    
     if es_infinito:
         print("El sistema de ecuaciones tiene infinitas soluciones")
     else:
