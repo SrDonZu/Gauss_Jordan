@@ -1,8 +1,8 @@
 import uso_matrices as matrices
 from uso_matrices import Matriz_Gauss_Jordan
 
-num_incognitas = 3 #int(input("# de incognitas: "))
-sistema_ecuaciones = []
+num_incognitas: int = 3 #int(input("# de incognitas: "))
+sistema_ecuaciones: list = []
 
 for i in range(num_incognitas):
     sistema_ecuaciones.append(matrices.traducir_ecuacion(input(f"Introduce ecuacion #{i + 1}: ")))
